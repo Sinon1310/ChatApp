@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
-
+ 
 // Keep track of all connected clients
 const clients = new Set();
 
